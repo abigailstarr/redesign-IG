@@ -5,57 +5,129 @@
     <title>Abby's IG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Climate+Crisis&family=Frijole&family=Kranky&family=Rubik+Glitch&family=Rubik+Puddles&display=swap" rel="stylesheet">
 
     <style>
-      
       body {
         margin: 5vw 15vw 10vw 15vw;
         background-color: #B7CFB4;
       }
-      
+
       .bowlby-one-sc-regular {
         font-family: "Bowlby One SC", serif;
         font-weight: 400;
         font-style: normal;
-        line-height: 11vh;
+        line-height: 12vh;
+      }
+      
+      .climate-crisis{ 
+        font-family: "Climate Crisis", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "YEAR" 1979;
+      }  
+      
+      .frijole-regular {
+        font-family: "Frijole", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .kranky-regular {
+        font-family: "Kranky", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .finger-paint-regular {
+        font-family: "Finger Paint", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .rubik-glitch-regular {
+        font-family: "Rubik Glitch", serif;
+        font-weight: 400;
+        font-style: normal;
       }
 
+      .rubik-puddles-regular {
+        font-family: "Rubik Puddles", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
       
+      @keyframes firstfontRotation {
+        0% { font-family: 'Climate Crisis'; }
+        33% { font-family: "Rubik Puddles"; }
+        66% { font-family: "Finger Paint"; }
+        100% { font-family: 'Climate Crisis'; }
+    }
+      
+      @keyframes secondfontRotation {
+        0% { font-family: "Kranky"; }
+        33% { font-family: "Frijole"; }
+        66% { font-family: "Rubik Glitch"; }
+        100% { font-family: "Kranky"; }
+    }
+
       .first_word {
-        margin: 0.05vw 0vw;
-        border: 0.25px solid black;
-        height: 10vh;
-      }
-      
-      .second_word {
-        margin: 0vw 0vw;
-        border: 0.25px solid black;
+        border: 3px dashed #324B30;
+        border-bottom-width: 0px;
+        color: #324B30;
+        height: 14vh;
         display: flex;
-        justify-content: right;
-        height: 10vh;
+        justify-content: left;
+        align-items: flex-end;
+        font-size: 9vh;
+        padding: 0px 2vw;
       }
       
+      .first-rotating-text {
+          font-size: 10vh;
+          font-weight: bold;
+          animation: firstfontRotation 4s infinite;
+      }
+
+      .second_word {
+        border: 3px dashed #324B30;
+        display: flex;
+        color: #324B30;
+        justify-content: right;
+        align-items: flex-end;
+        height: 14vh;
+        font-size: 9vh;
+        padding: 0px 2vw;
+      }
+      
+      .second-rotating-text {
+          font-size: 10vh;
+          font-weight: bold;
+          animation: secondfontRotation 4s infinite;
+      }
+
       .big_words {
         display: flex;
         height: 30vh;
         align-items: flex-end;
         top: 20px;
-        font-size: 12vh;
+        font-size: 13vh;
         margin: 0vw 0vw;
         padding: 0px 0px 0px 5px;
         color: #324B30;
         overflow: hidden;
       }
-      
+
       .gallery {
         display: grid;
         margin: 2vw 0vw;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
       }
-      
-      .gallery > div {
+
+      .gallery>div {
         background-color: #324B30;
         border: 1px solid #324B30;
         text-align: center;
@@ -63,9 +135,12 @@
         padding: 3vh;
         height: 9vh;
       }
-    
+
       nav {
-        border: 1px solid black;
+        border: 4px solid #324B30;
+        background-color: white;
+        color: #324B30;
+        font-size: 3vh;
         height: auto;
         display: flex;
         justify-content: space-around;
@@ -74,30 +149,27 @@
         padding: 1vh;
         overflow: hidden;
       }
-      
+
       @media (max-width: 480px) {
         nav {
           flex-direction: column;
         }
+
         .gallery {
           grid-template-columns: 1fr 1fr 1fr;
         }
       }
-      
-      
-    
     </style>
   </head>
   <body>
-    
-    <div class="first_word">first</div>
-    
-    <div class="second_word">second</div>
-    
+
+    <div class="first_word first-rotating-text">abby</div>
+
+    <div class="second_word second-rotating-text">starr</div>
+
     <div class="big_words bowlby-one-sc-regular">BIG WORDS</div>
-    
-    <section
-      class="gallery">
+
+    <section class="gallery">
       <div>text</div>
       <div>image</div>
       <div>text</div>
@@ -111,12 +183,12 @@
       <div>text</div>
       <div>image</div>
     </section>
-    
+
     <nav>
       <span>x followers</span>
       <span>x posts</span>
       <span>x reposts</span>
     </nav>
-    
+
   </body>
 </html>
