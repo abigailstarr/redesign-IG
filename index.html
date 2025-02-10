@@ -5,25 +5,104 @@
     <title>Abby's IG</title>
     
     <style>
+      
+      body {
+        margin: 5vw 15vw 10vw 15vw;
+      }
+      
+      .first_word {
+        margin: 0.05vw 0vw;
+        border: 0.25px solid black;
+        height: 10vh;
+      }
+      
+      .second_word {
+        margin: 0vw 0vw;
+        border: 0.25px solid black;
+        display: flex;
+        justify-content: right;
+        height: 10vh;
+      }
+      
+      .big_words {
+        display: flex;
+        background-color: gray;
+        height: 30vh;
+        align-items: flex-end;
+        top: 20px;
+        font-size: 9vh;
+        margin: 0vw 0vw;
+        padding: 0px 0px 0px 5px;
+        overflow: hidden;
+      }
+      
+      .gallery {
+        display: grid;
+        margin: 2vw 0vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+      
+      .gallery > div {
+        background-color: white;
+        border: 1px dashed pink;
+        text-align: center;
+        padding: 3vh;
+        height: 6vh;
+      }
     
       nav {
         border: 1px solid black;
-        height: 200px;
+        height: auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        padding: 1vh;
+        overflow: hidden;
       }
+      
+      @media (max-width: 480px) {
+        nav {
+          flex-direction: column;
+        }
+        .gallery {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      
+      
     
     </style>
   </head>
   <body>
     
-    <nav>
-      <span>my YouTube</span>
-      <span>my Twitter</span>
-      <span>my Facebook</span>
+    <div class="first_word">first</div>
     
+    <div class="second_word">second</div>
+    
+    <div class="big_words">BIG WORDS</div>
+    
+    <section
+      class="gallery">
+      <div>text</div>
+      <div>image</div>
+      <div>text</div>
+      <div>image</div>
+      <div>text</div>
+      <div>image</div>
+      <div>text</div>
+      <div>image</div>
+      <div>text</div>
+      <div>image</div>
+      <div>text</div>
+      <div>image</div>
+    </section>
+    
+    <nav>
+      <span>x followers</span>
+      <span>x posts</span>
+      <span>x reposts</span>
     </nav>
     
   </body>
