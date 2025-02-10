@@ -3,12 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Abby's IG</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
     <style>
       
       body {
         margin: 5vw 15vw 10vw 15vw;
+        background-color: #B7CFB4;
       }
+      
+      .bowlby-one-sc-regular {
+        font-family: "Bowlby One SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 11vh;
+      }
+
       
       .first_word {
         margin: 0.05vw 0vw;
@@ -26,13 +38,13 @@
       
       .big_words {
         display: flex;
-        background-color: gray;
         height: 30vh;
         align-items: flex-end;
         top: 20px;
-        font-size: 9vh;
+        font-size: 12vh;
         margin: 0vw 0vw;
         padding: 0px 0px 0px 5px;
+        color: #324B30;
         overflow: hidden;
       }
       
@@ -44,11 +56,12 @@
       }
       
       .gallery > div {
-        background-color: white;
-        border: 1px dashed pink;
+        background-color: #324B30;
+        border: 1px solid #324B30;
         text-align: center;
+        color: white;
         padding: 3vh;
-        height: 6vh;
+        height: 9vh;
       }
     
       nav {
@@ -81,7 +94,7 @@
     
     <div class="second_word">second</div>
     
-    <div class="big_words">BIG WORDS</div>
+    <div class="big_words bowlby-one-sc-regular">BIG WORDS</div>
     
     <section
       class="gallery">
