@@ -10,7 +10,7 @@
     <style>
       body {
         margin: 5vw 15vw 10vw 15vw;
-        background-color: #B7CFB4;
+        background-color: #fbf8cc;
       }
 
       .bowlby-one-sc-regular {
@@ -80,10 +80,9 @@
     }
 
       .first_word {
-        border: 3px dashed #324B30;
-        box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.6);
+        background-color: #ffffea;
         border-bottom-width: 0px;
-        color: #324B30;
+        color: #70e000;
         height: auto;
         display: flex;
         justify-content: left;
@@ -100,16 +99,15 @@
       }
 
       .second_word {
-        border: 3px dashed #324B30;
-        box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.6);
+        background-color: #caff8a;
         display: flex;
-        color: #324B30;
+        color: #70e000;
         justify-content: right;
         align-items: flex-end;
         height: auto;
         font-size: 11vh;
         padding: 0px 2vw;
-        text-shadow: 4px 4.5px rgba(255, 255, 255, 0.8);
+        text-shadow: 4px 4.5px rgba(255, 255, 255, 0.6);
       }
       
       .second-rotating-text {
@@ -126,10 +124,12 @@
         font-size: 13vh;
         margin: 0vw 0vw;
         padding: 0px 0px 0px 5px;
-        color: #324B30;
+        color: #70e000;
         overflow: hidden;
-        text-shadow: 4px 4.5px #B7CFB4, 
+        text-shadow:
+          4px 4.5px #B7CFB4, 
           6px 6.5px white;
+        -webkit-text-stroke: 2px #004b23;
       }
       
       .gallery {
@@ -139,14 +139,38 @@
         grid-gap: 15px;
       }
 
-      .gallery>div {
+      .outer-frame {
         background-color: #324B30;
-        border: 1px solid #324B30;
+        border: 1px solid black;
         text-align: center;
         aspect-ratio: 1/1;
         color: white;
-        padding: 3vh;
+        padding: 1.3vw;
         height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .inner-frame {
+          background-color: white;
+          border: 1px solid black;
+          height: 100%;
+          width: 100%;
+          color: black;
+          display: flex;
+          align-items: flex-end;
+      }
+      
+      .caption-bar {
+        display: flex;
+        font-family: "Bowlby One SC";
+        height: auto;
+        width: 90%;
+        border: 0.5px solid black;
+        background-color: #324B30;
+        color: black;
+        justify-content: center;
+        margin: 0em 0.5em 0.5em 0.5em;
       }
 
       nav {
@@ -158,9 +182,12 @@
         align-items: center;
         flex-direction: row;
         color: #324B30;
+        -webkit-text-stroke: 1px white;
+        font-family: "Bowlby One SC";
         padding: 1vh;
         overflow: hidden;
         box-shadow: 0px 0px 0px 2px white;
+        margin: 5vh 0;
       }
 
       @media (max-width: 1000px) {
@@ -185,6 +212,28 @@
         .second_word {
           font-size: 11vw;
         }
+        
+        .first-border, .ninth-border {
+          background-color: #ff9770;
+        }
+        
+        .second-border, .seventh-border,
+        .twelvth-border {
+          background-color: #70d6ff;
+        }
+        
+        .third-border, .fifth-border, 
+        .tenth-border {
+          background-color: #ff70a6;
+        }
+        
+        .fourth-border, .eighth-border {
+          background-color: #ffd670;
+        }
+        
+         .sixth-border, .eleventh-border {
+          background-color: #e9ff70;
+        }
       }
     </style>
   </head>
@@ -197,18 +246,78 @@
     <div class="big_words bowlby-one-sc-regular">BIG WORDS</div>
 
     <section class="gallery">
-      <div>text</div>
-      <div>image</div>
-      <div>text</div>
-      <div>image</div>
-      <div>text</div>
-      <div>image</div>
-      <div>text</div>
-      <div>image</div>
-      <div>text</div>
-      <div>image</div>
-      <div>text</div>
-      <div>image</div>
+      <div class="outer-frame first-border">
+        <div class="inner-frame">
+          <div class="caption-bar first-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame second-border">
+        <div class="inner-frame">
+          <div class="caption-bar second-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame third-border">
+        <div class="inner-frame">
+          <div class="caption-bar third-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame fourth-border">
+        <div class="inner-frame">
+          <div class="caption-bar fourth-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame fifth-border">
+        <div class="inner-frame">
+          <div class="caption-bar fifth-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame sixth-border">
+        <div class="inner-frame">
+          <div class="caption-bar sixth-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame seventh-border">
+        <div class="inner-frame">
+          <div class="caption-bar seventh-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame eighth-border">
+        <div class="inner-frame">
+          <div class="caption-bar eighth-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame ninth-border">
+        <div class="inner-frame">
+          <div class="caption-bar ninth-border">
+            meow
+          </div>
+        </div></div>
+     <div class="outer-frame tenth-border">
+        <div class="inner-frame">
+          <div class="caption-bar tenth-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame eleventh-border">
+        <div class="inner-frame">
+          <div class="caption-bar eleventh-border">
+            meow
+          </div>
+        </div></div>
+      <div class="outer-frame twelvth-border">
+        <div class="inner-frame">
+          <div class="caption-bar twelvth-border">
+            meow
+          </div>
+        </div></div>
     </section>
 
     <nav>
