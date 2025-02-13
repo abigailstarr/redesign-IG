@@ -90,7 +90,7 @@
         justify-content: left;
         align-items: flex-end;
         padding: 0px 2vw;
-        -webkit-text-stroke: 0.01px black;
+        -webkit-text-stroke: 0.1px black;
         text-shadow: 4px 4.5px rgba(255, 255, 255, 1);
       }
       
@@ -111,7 +111,7 @@
         height: auto;
         font-size: 15vw;
         padding: 0px 2vw;
-        -webkit-text-stroke: 0.01px black;
+        -webkit-text-stroke: 0.1px black;
         text-shadow: 4px 4.5px rgba(255, 255, 255, 1);
       }
       
@@ -144,45 +144,44 @@
       }
 
       .outer-frame {
-        background-color: #324B30;
-        border: 1px solid black;
-        text-align: center;
         aspect-ratio: 1/1;
-        color: white;
-        padding: 1.3vw;
         height: auto;
+        background-color: #324B30;
         display: flex;
+        position: relative;
         justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        padding: 0.3em;
       }
       
       .inner-frame {
-          background-color: white;
-          border: 1px solid black;
+          background-color: rgba(255,255,255, 0.4);
           height: 100%;
           width: 100%;
-          color: black;
           display: flex;
-          align-items: flex-end;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid black;
       }
       
       .image-container {
         width: 90%;
         height: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        object-fit: cover;
       }
       
       .caption-bar {
-        display: flex;
-        font-family: "Bowlby One SC";
-        height: auto;
+        position: absolute;
+        bottom: 0.7em;
         width: 90%;
-        border: 0.5px solid black;
+        font-family: "Bowlby One SC";
+        font-size: 2vw;
+        text-align: center;
+        border: 1px solid black;
         background-color: #324B30;
         color: black;
-        justify-content: center;
-        margin: 0em 0.5em 0.5em 0.5em;
       }
       
       img {
@@ -267,75 +266,110 @@
     <section class="gallery">
       <div class="outer-frame first-border">
         <div class="inner-frame">
-          <div class="caption-bar first-border"></div>
           <div class="image-container">
-            <img src="kk.jpg">
+            <img src="avo-bagel.jpg">
+          </div>
+          <div class="caption-bar first-border">
+            lox bagel <3
           </div>
         </div></div>
       <div class="outer-frame second-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="kk.jpg">
+          </div>
           <div class="caption-bar second-border">
-            meow
+            kk & me
           </div>
         </div></div>
       <div class="outer-frame third-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="tall-frances.jpg">
+          </div>
           <div class="caption-bar third-border">
-            meow
+            franny
           </div>
         </div></div>
       <div class="outer-frame fourth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="twined.jpg">
+          </div>
           <div class="caption-bar fourth-border">
-            meow
+            maddy
           </div>
         </div></div>
       <div class="outer-frame fifth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="thanksgiv.jpg">
+          </div>
           <div class="caption-bar fifth-border">
-            meow
+            thanksgiving
           </div>
         </div></div>
       <div class="outer-frame sixth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="selfie.jpg">
+          </div>
           <div class="caption-bar sixth-border">
-            meow
+            selfie
           </div>
         </div></div>
       <div class="outer-frame seventh-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="fran-me.jpg">
+          </div>
           <div class="caption-bar seventh-border">
-            meow
+            me & fran
           </div>
         </div></div>
       <div class="outer-frame eighth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="puzzle.jpg">
+          </div>
           <div class="caption-bar eighth-border">
-            meow
+            puzzled
           </div>
         </div></div>
       <div class="outer-frame ninth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="ceasar.jpg">
+          </div>
           <div class="caption-bar ninth-border">
-            meow
+            from perilla
           </div>
         </div></div>
      <div class="outer-frame tenth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="donut.jpg">
+          </div>
           <div class="caption-bar tenth-border">
-            meow
+            reach out
           </div>
         </div></div>
       <div class="outer-frame eleventh-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="sushi.jpg">
+          </div>
           <div class="caption-bar eleventh-border">
-            meow
+            sushi boat
           </div>
         </div></div>
       <div class="outer-frame twelvth-border">
         <div class="inner-frame">
+          <div class="image-container">
+            <img src="big-fran.jpg">
+          </div>
           <div class="caption-bar twelvth-border">
-            meow
+            meow!
           </div>
         </div></div>
     </section>
